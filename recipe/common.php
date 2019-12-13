@@ -121,7 +121,7 @@ set('bin/composer', function () {
         $composer = '{{release_path}}/composer.phar';
     }
 
-    return '{{bin/php}} ' . $composer;
+    return $composer; // Small changed to make it works with Bitnamis LAMP stack `composer`
 });
 
 set('bin/symlink', function () {
